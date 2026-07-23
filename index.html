@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Maryam ❤️</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:cursive;
+    overflow:hidden;
+}
+
+.card{
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 0 30px #ff5e78;
+    animation:show 2s;
+}
+
+h1{
+    color:#ff3366;
+    font-size:45px;
+}
+
+p{
+    font-size:22px;
+    color:#444;
+}
+
+.heart{
+    font-size:60px;
+    animation:beat 1s infinite;
+}
+
+@keyframes beat{
+50%{transform:scale(1.3);}
+}
+
+@keyframes show{
+from{opacity:0; transform:translateY(50px);}
+to{opacity:1;}
+}
+
+.confetti{
+position:absolute;
+font-size:30px;
+animation:fall 5s infinite;
+}
+
+@keyframes fall{
+from{top:-50px;}
+to{top:100vh;}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<audio autoplay loop>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+</audio>
+
+
+<div class="card">
+
+<div class="heart">❤️</div>
+
+<h1>Happy Birthday Maryam 🎂</h1>
+
+<p>
+عيد ميلاد سعيد يا مريم ❤️<br><br>
+
+نتمنى لك عام مليء بالفرح والسعادة والنجاح.
+وجودك في حياتي حاجة مميزة بزاف،
+ربي يحفظك ويحققلك كل أحلامك ❤️
+
+<br><br>
+
+You are special, Maryam ✨
+</p>
+
+</div>
+
+
+<script>
+
+for(let i=0;i<30;i++){
+let h=document.createElement("div");
+h.className="confetti";
+h.innerHTML="❤️";
+h.style.left=Math.random()*100+"%";
+h.style.animationDelay=Math.random()*5+"s";
+document.body.appendChild(h);
+}
+
+</script>
+
+</body>
+</html>
